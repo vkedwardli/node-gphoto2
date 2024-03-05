@@ -19,7 +19,7 @@
         ]
       },
       'cflags': [
-        '--std=c++11'
+        '--std=c++17'
       ],
       'cflags!': [
         '-fno-exceptions'
@@ -30,7 +30,7 @@
           'xcode_settings': {
             'GCC_ENABLE_CPP_EXCEPTIONS': 'YES',
             'OTHER_CPLUSPLUSFLAGS' : [
-              '-std=c++11',
+              '-std=c++17',
               '-stdlib=libc++'
             ]
           }
