@@ -9,7 +9,11 @@ extern "C" {
     GPhoto2::Initialize(target);
     GPCamera::Initialize(target);
   }
+  #if NODE_MAJOR_VERSION >= 10
+  NAN_MODULE_WORKER_ENABLED(gphoto2, init)
+  #else
   NODE_MODULE(gphoto2, init)
+  #endif
 }
 
 template<>
